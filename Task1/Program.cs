@@ -79,7 +79,7 @@ namespace Task1
             if (File.Exists("staff.txt"))
                 using (StreamReader sr = new StreamReader("staff.txt"))
                 {
-                    Console.WriteLine(sr.ReadToEnd());
+                    Console.WriteLine(sr.ReadToEnd().Replace('#', ' '));
                 }
             else
                 Console.WriteLine("Файла с информацией о сотрудниках не существует.");
